@@ -19,6 +19,7 @@
     <!-- Stylesheet
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
     <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
@@ -32,31 +33,32 @@
     <![endif]-->
 </head>
 <body>
-<!-- Navigation
-==========================================-->
-<nav id="menu" class="navbar navbar-default navbar-fixed-top home">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            <a class="navbar-brand" href="index.html" title="Portal Sur Ingenieria"><img src="img/psi-logo.png" alt="Portal Sur Ingenieria" /></a>
-        </div>
+    <!-- Navigation
+    ==========================================-->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top home">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="index.html" title="Portal Sur Ingenieria"><img src="img/psi-logo.png" alt="Portal Sur Ingenieria" /></a>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html" class="page-scroll" title="Inicio">Inicio</a></li>
-                <li><a href="#" class="page-scroll active" title="Servicios">Servicios</a></li>
-                <li><a href="index.html#about-section" class="page-scroll" title="Sobre Nosostros">Sobre Nosostros</a></li>
-                <li><a href="index.html#team-section" class="page-scroll" title="Ahorro">Ahorro</a></li>
-                <li><a href="index.html#beneficios-fiscales" class="page-scroll" title="Beneficios Fiscales">Beneficios Fiscales</a></li>
-                <li><a href="index.html#contact-section" class="page-scroll" title="Contacto">Contacto</a></li>
-            </ul>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html" class="page-scroll" title="Inicio">Inicio</a></li>
+                    <li><a href="#" class="page-scroll active" title="Servicios">Servicios</a></li>
+                    <li><a href="index.html#about-section" class="page-scroll" title="Sobre Nosostros">Sobre Nosostros</a></li>
+                    <br class="hidden-xs hidden-md hidden-lg" />
+                    <li><a href="index.html#team-section" class="page-scroll" title="Ahorro">Ahorro</a></li>
+                    <li><a href="index.html#beneficios-fiscales" class="page-scroll" title="Beneficios Fiscales">Beneficios Fiscales</a></li>
+                    <li><a href="index.html#contact-section" class="page-scroll" title="Contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
+        <!-- /.container-fluid -->
+    </nav>
     <!-- Header -->
     <!--<header class="text-center" id="servicios">
         <div class="intro-text">
@@ -64,43 +66,78 @@
         </div>
     </header>-->
     <!-- Services Section -->
-    <div id="services-section" class="text-center">
+    <div id="services-section" class="text-center services-page">
         <div class="container">
             <div class="section-title center">
-                <h2>Servicios</h2>
+                <h2><span>S</span>ervicios</h2>
                 <hr>
                 <div class="clearfix"></div>
                 <p>En PSI ofrecemos productos de excelencia a nivel mundial y contamos con un equipo de expertos que trabajan desde hace 10 años en el rubro. Nuestro principal objetivo es cubrir las necesidades nuestros cliente brindando una excelente calidad en nuestros productos.</p>
             </div>
             <div class="space"></div>
-            <div class="row" id="instalacion">
-                <div class="col-sm-5 wow fadeInLeft">
-                    <img src="img/portfolio/01.jpg" class="img-responsive services" alt="Panel Solar">
-                </div>
-                <div class="col-md-7 text wow fadeInRight">
-                    <h4>Eficiencia energetica y generación fotovoltaica</h4>
-                    <p>La inversión en paneles solares tiene muchos aspectos positivos, tanto para el hogar como para una empresa. Estos generan gran cantidad de energía a través de su célula fotovoltaica, esta es 100% renovable, eficaz y permite gran ahorro de recursos económicos. Los rendimientos se estima que se encuentran en los 1,5 KW/h.</p>
+            <div class="row servicios">
+                <div class="col-md-12">
+                    <div class="text wow fadeInDown" id="instalacion">
+                        <h4>Generación Fotovoltaica</h4>
+                        <p>
+                            Realizamos su proyecto fotovoltaico llave en mano para la industria, agro o residencia de acuerdo a sus necesidades.
+                            Para ello utilizamos una metodología ajustada de análisis de situación donde se realiza un estudio previo del consumo y características generales de la instalación, luego se realiza una ingeniería detallada, bajo normas internacionales, donde se obtiene la información inicial para comenzar el proyecto. Luego nuestro equipo especializado realiza el montaje electromecánico y puesta en marcha. Al final se realiza una revisión con el cliente.
+                            Trabajamos únicamente con las marcas lideres en paneles, inversores, estructuras, cables, conectores y baterías lo que nos asegura junto con una ingeniera especializada y mano de obra especializada una alta calidad y confiablidad de la instalación.
+                            Contamos con planes ajustados para la operación y mantenimiento de su planta fotovoltaica, lo que garantiza un producción óptima de su instalación.
+                        </p>
+                        <p>
+                            Auditorias de plantas fotovoltaicas:
+                            Contamos con equipamiento especifico para relevar su instalación fotovoltaica de esta manera podemos asegurar el estado de sus componentes de planta fotovoltaica. Como resultado se entrega un informe con las condiciones y las recomendaciones para lograr un optimo en su planta fotovoltaica.
+                        </p>
+                        <p>
+                            Brindamos servicios de gestión de proyectos especializados donde brindamos toda nuestra experiencia en favor del inversionista, brindando asesoramiento en la elección del contratista principal, los términos y condiciones de negociación y monitoreando que los suministros y montaje estén de acuerdo a lo acordado. De esta manera se ahorran costos.
+                        </p>
+                    </div>
+                </div>          
+            </div>    
+            <div class="row servicios">
+                    <div class="text wow fadeInLeft" id="eficiencia">
+                        <h4>Eficiencia energética</h4>
+                        <p>
+                            La buena gestión de nuestros recursos es el primer paso para la sustentabilidad de nuestras operaciones. Para ello PSI cuenta con un equipo altamente calificado para el análisis de estado inicial, toma de medidas del estado actual, obtención y análisis de toma de datos, detección de oportunidades.
+                        </p>
+                        <p>
+                            Contamos con equipamiento de ultima tecnología para efectuar un análisis minucioso de los consumos energéticos de su empresa.
+                        </p>
+                    </div>
+                    <div class="text wow fadeInRight" id="montaje">
+                        <h4>Montaje y Mantenimiento Industrial</h4>
+                        <p>
+                            Nuestro equipo cuenta con la mas alta experiencia en montaje electromecánico, instalación AC/DC y tensiones débiles.
+                        </p>
+                    </div>
+                </div> 
+                <div class="row servicios">
+                    <div class="text wow fadeInLeft" id="gestion">
+                        <h4>Gestión de proyectos</h4>
+                        <p>
+                            Contamos con un equipo de profesionales multidisciplinario que nos asegura una excelente gestión de nuestros proyectos.
+                        </p>
+                        <p>Las certificaciones obtenidas por nuestro equipo:</p>
+                        <ul>
+                            <li>- Prince 2.</li>
+                            <li>- Six Sigma (Green belt).</li>
+                            <li>- Auditor de calidad.</li>
+                        </ul>
+                    </div>
+                    <div class="text wow fadeInRight" id="habilitaciones">
+                        <h4>Habilitaciones</h4>
+                        <p>
+                            Realizamos todas las habilitaciones correspondientes a:
+                        </p>
+                        <ul>
+                            <li>- Habilitación de calderas</li>
+                            <li>- Instalaciones mecánicas</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="row" id="mantenimiento">
-                <div class="col-sm-5 app wow fadeInLeft">
-                    <img src="img/portfolio/02.jpg" class="img-responsive services" alt="Panel Solar Service">
-                </div>
-                <div class="col-md-7 text wow fadeInRight">
-                    <h4>Mantenimiento industrial</h4>
-                    <p>En PSI sabemos que la energía en el sector industrial nunca puede faltar, entendemos la importancia que esta significa. Para ello es importante el correcto funcionamiento de la empresa que se contrata para realizar su mantenimiento. Nuestra empresa cuenta con personal capacitado de vasta experiencia para llevar a cabo cada tarea en el momento que se necesita, contamos con un excelente proceso de atención. Cuidamos todos los detalles a la hora de hacer el mantenimiento, mediante la protección de los elementos, las personas siempre apuntando a la máxima calidad.</p>
-                </div>
-            </div>
-            <div class="row" id="gestion">
-                <div class="col-sm-5 wow fadeInLeft">
-                    <img src="img/portfolio/03.jpg" class="img-responsive services" alt="Panel Solar Venta">
-                </div>
-                <div class="col-md-7 text wow fadeInRight">
-                    <h4>Gestion de proyectos y habilitaciones</h4>
-                    <p>Nos encargamos de planear y dar seguimiento al proyecto, así como también nos encargamos las habilitaciones pertinentes.</p>
-                </div>
-            </div>
-        </div>
+
     </div>
 
     <div id="social-section">

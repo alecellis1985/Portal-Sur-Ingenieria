@@ -1,0 +1,204 @@
+@media (max-width: 1200px) {
+    #menu.navbar-default .navbar-nav > li > a {
+        padding: 10px 9px 5px 9px;
+    }
+
+    .intro-text {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
+
+        .intro-text H1 {
+            font-size: 59px;
+        }
+
+        .intro-text H2 {
+            font-size: 30px;
+        }
+
+    #services-section img.home {
+        width: auto !important;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    #about-section {
+        padding: 0;
+    }
+
+    .section-title.center {
+        padding: 30px 63px;
+    }
+
+    #achievements {
+        padding: 20px 0;
+    }
+
+    .services-page {
+        padding: 90px 0;
+    }
+
+    #services-section div.row div.text {
+        height: 300px;
+    }
+
+    section#beneficios-fiscales div.item {
+        height: 267px;
+    }
+
+    .bfimg {
+        width: auto;
+        position: absolute;
+        height: 600px;
+        left: -9px;
+    }
+
+    #energia-renovable h2 {
+        font-size: 28px;
+    }
+    .form {
+        margin: 0 0 0 20px
+    }
+}
+@media (max-width: 992px) {
+    #menu.navbar-default .navbar-nav > li > a.active {
+        border-bottom: none;    
+        text-decoration: underline;
+    }
+    #menu.navbar-default .navbar-nav > li > a:hover {
+        border-bottom: none;
+    }
+    .intro-text H2 {
+        font-size: 25px;
+    }
+    .achievement-box span.count {
+        font-size: 35px;
+    }
+    .portfolio-item .hover-bg {
+        height: 235px;
+    }
+    #services-section div.service-container {
+        height: 1175px;
+    }
+    #services-section div.row {
+        margin-bottom: 12px;
+    }
+    #services-section div.row div.text {
+        height: auto;
+        padding-top: 11px;
+    }
+    #services-section div.row img.services {
+        height: auto;
+        width: unset;
+        position: relative;
+        text-align: center;
+        padding-bottom: 35px;
+        right: 0;
+    }
+    section#beneficios-fiscales div.item {
+        height: 185px;
+    }
+        section#beneficios-fiscales div.item a {
+            bottom: 10px;
+            right: 25px;
+        }
+    .bfimg {
+        width: 100%;
+        position: relative;
+        height: auto;
+        left: 0;
+    }
+    section#beneficios-fiscales div.item {
+        height: 285px;
+    }
+    section#energia-renovable h2 {
+    }
+    section#energia-renovable div.bfinfo li {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+}
+@media (max-width: 768px) {
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border: none;
+    }
+    .intro-text H1 {
+        font-size: 43px;
+    }
+    #services-section {
+        padding: 10px 0;
+    }
+
+        #services-section.services-page {
+            padding: 90px 0;
+        }
+    .section-title.center {
+        padding: 30px 0px;
+    }
+    #services-section p i.fa-caret-right {
+        display: unset;
+    }
+    .hover-bg .hover-text {
+        padding: 55px 0 0 0;
+    }
+    .form {
+        margin: 0;
+    }
+}
+@media (max-width: 480px) {
+    header#home {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .intro-text H1 {
+        font-size: 34px;
+    }
+    .intro-text H2 {
+        font-size: 20px;
+    }
+    a.nuestroEquipo {
+        padding: 8px;
+    }
+    .portfolio-item .hover-bg {
+        height: 170px;
+    }
+    .hover-bg .hover-text {
+        padding: 10px 0 0 0;
+    }
+    #services-section div.service-container {
+        height: 850px;
+    }
+    #services-section div.row div.text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .space {
+        margin-top: 0px;
+    }
+    section#beneficios-fiscales div.item {
+        height: auto;
+    }
+        section#beneficios-fiscales div.item p {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        section#beneficios-fiscales div.item a {
+            bottom: 10px;
+            right: 25px;
+            position: inherit;
+            display: block;
+        }
+    section#energia-renovable h2 {
+        line-height: 31px;
+    }
+}
+@media (max-width: 320px) {
+    #services-section h4 {
+        font-size: 22px;
+    }
+
+}
+
+
+

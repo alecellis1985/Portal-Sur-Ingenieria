@@ -19,9 +19,10 @@
     <!-- Stylesheet
         ================================================== -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
     <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -48,6 +49,7 @@
                     <li><a href="index.html" class="page-scroll  active" title="Inicio">Inicio</a></li>
                     <li><a href="#services-section" class="page-scroll" title="Servicios">Servicios</a></li>
                     <li><a href="#about-section" class="page-scroll" title="Sobre Nosostros">Sobre Nosostros</a></li>
+                    <br class="hidden-xs hidden-md hidden-lg" />
                     <li><a href="#team-section" class="page-scroll" title="Ahorro">Ahorro</a></li>
                     <li><a href="#beneficios-fiscales" class="page-scroll" title="Beneficios Fiscales">Beneficios Fiscales</a></li>
                     <li><a href="#contact-section" class="page-scroll" title="Contacto">Contacto</a></li>
@@ -69,51 +71,71 @@
 
     <!-- Services Section -->
     <div id="services-section" class="text-center">
-        <div class="container">
-            <div class="section-title center">
-                <h2>Servicios</h2>
-                <hr>
-                <div class="clearfix"></div>
-            </div>
-            <div style="height: 1050px;">
-                <div class="row">
-                    <div class="col-sm-4 web">
-                        <div class="portfolio-item wow fadeInLeft">
-                            <div class="hover-bg">
-                                <a href="servicios.html#instalacion" title="Panel Solar">
-                                    <div class="hover-text">
-                                        <h4>Eficiencia energetica y generación fotovoltaica</h4>
-                                        <p>Leer mas <i class="fa fa-caret-right"></i></p>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <img src="img/portfolio/01.jpg" class="img-responsive home" alt="Panel Solar">
-                                </a>
+        <div class="section-title center">
+            <h2><span>S</span>ervicios</h2>
+            <hr>
+            <div class="clearfix"></div>
+        </div>
+        <div class="service-container">
+            <div class="web">
+                <div class="portfolio-item wow fadeInLeft">
+                    <div class="hover-bg">
+                        <a href="servicios.html#instalacion" title="Panel Solar">
+                            <div class="hover-text">
+                                <h4>Generación fotovoltaica</h4>
+                                <p>Leer mas <i class="fa fa-caret-right"></i></p>
+                                <div class="clearfix"></div>
                             </div>
-                        </div>
-                        <div class="portfolio-item wow fadeInLeft">
-                            <div class="hover-bg">
-                                <a href="servicios.html#mantenimiento" title="Panel Solar Service">
-                                    <div class="hover-text">
-                                        <h4>Mantenimiento industrial</h4>
-                                        <p>Leer mas <i class="fa fa-caret-right"></i></p>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <img src="img/portfolio/02.jpg" class="img-responsive home" alt="Panel Solar Service">
-                                </a>
+                            <img src="img/portfolio/01.jpg" class="img-responsive home" alt="Panel Solar">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item wow fadeInLeft">
+                    <div class="hover-bg">
+                        <a href="servicios.html#instalacion" title="Panel Solar">
+                            <div class="hover-text">
+                                <h4>Eficiencia energética</h4>
+                                <p>Leer mas <i class="fa fa-caret-right"></i></p>
+                                <div class="clearfix"></div>
                             </div>
-                        </div>
-                        <div class="portfolio-item wow fadeInLeft">
-                            <div class="hover-bg">
-                                <a href="servicios.html#gestion" title="Panel Solar Venta">
-                                    <div class="hover-text">
-                                        <h4>Gestion de proyectos y habilitaciones</h4>
-                                        <p>Leer mas <i class="fa fa-caret-right"></i></p>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <img src="img/portfolio/03.jpg" class="img-responsive home" alt="Panel Solar Venta">
-                                </a>
+                            <img src="img/portfolio/04.jpg" class="img-responsive home" alt="Panel Solar">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item wow fadeInLeft">
+                    <div class="hover-bg">
+                        <a href="servicios.html#mantenimiento" title="Panel Solar Service">
+                            <div class="hover-text">
+                                <h4>Montaje y Mantenimiento Industrial</h4>
+                                <p>Leer mas <i class="fa fa-caret-right"></i></p>
+                                <div class="clearfix"></div>
                             </div>
-                        </div>
+                            <img src="img/portfolio/02.jpg" class="img-responsive home" alt="Panel Solar Service">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item wow fadeInLeft">
+                    <div class="hover-bg">
+                        <a href="servicios.html#gestion" title="Panel Solar Venta">
+                            <div class="hover-text">
+                                <h4>Gestión de proyectos</h4>
+                                <p>Leer mas <i class="fa fa-caret-right"></i></p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <img src="img/portfolio/03.jpg" class="img-responsive home" alt="Panel Solar Venta">
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-item wow fadeInLeft">
+                    <div class="hover-bg">
+                        <a href="servicios.html#habilitaciones" title="Panel Solar Venta">
+                            <div class="hover-text">
+                                <h4>Habilitaciones</h4>
+                                <p>Leer mas <i class="fa fa-caret-right"></i></p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <img src="img/portfolio/05.jpg" class="img-responsive home" alt="Panel Solar Venta">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -123,7 +145,7 @@
     <div id="about-section">
         <div class="container">
             <div class="section-title text-center center">
-                <h2>Sobre Nosotros</h2>
+                <h2><span>S</span>obre <span>N</span>osotros</h2>
                 <hr>
                 <div class="clearfix"></div>
                 <p>PSI es una empresa con amplia experiencia en el sector industrial. Ofrecemos productos y servicios de alta calidad enfocado en las necesidades del cliente, brindando soluciones eficientes que permiten mejorar la competitividad de la empresa.</p>
@@ -175,25 +197,25 @@
     <div id="beneficios-fiscales">
         <div class="container">
             <div class="section-title text-center center">
-                <h2>Beneficios Fiscales</h2>
+                <h2><span>B</span>eneficios <span>F</span>iscales</h2>
                 <hr>
                 <div class="clearfix"></div>
                 <p>La política energética en Uruguay fue aprobada por el Poder Ejecutivo en 2008 y se acordó con todos los partidos políticos con representación parlamentaria en 2010. Uruguay cuenta con política de estado en el área energética y dispone de varios beneficios fiscales.</p>
             </div>
-            </div>
-            <div class="bfimg">
-                <img class="bfimg" src="img/molinos-minas.jpg" alt="Molinos Minas" />
-            </div>
-            <div class="text-center row wholeTeamBtn">
-                <a href="beneficios-fiscales.html" class="nuestroEquipo">Vea el listado de Beneficios &nbsp;<i class="fa fa-caret-right"></i></a>
-            </div>
+        </div>
+        <div class="bfimg">
+            <img class="bfimg" src="img/molinos-minas.jpg" alt="Molinos Minas" />
+        </div>
+        <div class="text-center row wholeTeamBtn">
+            <a href="beneficios-fiscales.html" class="nuestroEquipo">Vea el listado de Beneficios &nbsp;<i class="fa fa-caret-right"></i></a>
+        </div>
     </div>
 
     <!-- Contact Section -->
     <div id="contact-section" class="text-center">
         <div class="container">
             <div class="section-title center">
-                <h2>Contactenos</h2>
+                <h2><span>C</span>ontactenos</h2>
                 <hr>
                 <p>Nuestro equipo esta disponible para responder sus dudas.</p>
             </div>
@@ -215,29 +237,18 @@
                 <hr>
                 <div class="clearfix"></div>
             </div>
-            <div class="col-md-6">
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="text" id="name" class="form-control" placeholder="Nombre" required="required">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensaje" required></textarea>
-                        <p class="help-block text-danger"></p>
-                    </div>
-                    <div id="success"></div>
-                    <button type="submit" class="btn btn-default">Enviar Mensaje</button>
-                </form>
+            <div class="col-lg-6 col-md-6 wow fadeInUp delay-05s" ng-app="form">
+                <div class="form" ng-controller="homeCtrl as vm">
+                    <form ng-submit="vm.sendEmail(emailData.$valid)" name="emailData" style="padding-top: 10px" novalidate>
+                        <input class="input-text" type="text" name="name" placeholder="Nombre" value="Your Name *" ng-model="vm.user.nombre">
+
+                        <input class="input-text" type="text" name="email" placeholder="E-mail" value="Your E-mail *" ng-model="vm.user.email">
+
+                        <textarea class="input-text text-area" name="message" cols="0" rows="0" validate-email ng-model="vm.user.mensaje" placeholder="Mensaje"></textarea>
+                        <!--<input class="input-text" type="text" name="captchaCode" ng-model="captchaCode" correct-captcha id="captchaCode" autocomplete="off">-->
+                        <button type="submit" class="btn btn-warning">Send</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -278,7 +289,13 @@
     <script type="text/javascript" src="js/jquery.isotope.js"></script>
     <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/contact_me.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="js/angularjs-captcha.js"></script>
+    <script type="text/javascript" src="js/CommonService.js"></script>
+    <script type="text/javascript" src="js/form.app.js"></script>
+    <script type="text/javascript" src="js/home.controller.js"></script>>
+    <script type="text/javascript" src="js/alert.controller.js"></script>
 
     <!-- Javascripts
         ================================================== -->

@@ -77,7 +77,11 @@ function main() {
                 }
             });
             return false;
-        });
+		});
+
+		if ($(window).width() < 768) {
+			$(".portfolio-item div.hover-bg").addClass("hovered");
+		}
 
     });
 
