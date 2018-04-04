@@ -72,6 +72,11 @@ hr {
 	border: 0;
 	margin: 10px auto 30px;
 }
+
+.navbar-right {
+    margin-right: 65px;
+}
+
 /* Navigation */
 #menu {
 	padding: 20px;
@@ -783,3 +788,23 @@ section#novedades a.more:hover {
     color: #FFFFFF;
     background: #0dad8d;
 }
+#lang {
+    position: fixed;
+    top: 8px;
+    z-index: 9999;
+    right: 15px;
+}
+    #lang img {
+        width: 35px;
+        height: 35px;
+    }
+#langMobile {
+    position: relative;
+    top: 0;
+    right: -14px;
+}
+    #langMobile img {
+        width: 35px;
+        height: 35px;
+        margin: 5px;
+    }

@@ -1,12 +1,25 @@
 @media (max-width: 1200px) {
+    .navbar-right {
+        margin-right: -0;
+    }
     #menu.navbar-default .navbar-nav > li > a {
-        padding: 10px 9px 5px 9px;
+        padding: 15px 15px 5px 15px;
     }
+        #menu.navbar-default .navbar-nav > li > a.active {
+            border: none;
+            text-decoration: underline;
+        }
+        #menu.navbar-default .navbar-nav > li > a:hover {
+            color: #63768e;
+            border: none;
+            text-decoration: underline;
+            transition: 0s;
+        }
 
-    .intro-text {
-        padding-top: 150px;
-        padding-bottom: 100px;
-    }
+        .intro-text {
+            padding-top: 150px;
+            padding-bottom: 100px;
+        }
 
         .intro-text H1 {
             font-size: 59px;
