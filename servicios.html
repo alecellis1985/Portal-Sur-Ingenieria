@@ -93,52 +93,94 @@
                             Brindamos servicios de gestión de proyectos especializados donde brindamos toda nuestra experiencia en favor del inversionista, brindando asesoramiento en la elección del contratista principal, los términos y condiciones de negociación y monitoreando que los suministros y montaje estén de acuerdo a lo acordado. De esta manera se ahorran costos.
                         </p>
                     </div>
-                </div>          
-            </div>    
-            <div class="row servicios">
-                    <div class="text wow fadeInLeft" id="eficiencia">
-                        <h4>Eficiencia energética</h4>
-                        <p>
-                            La buena gestión de nuestros recursos es el primer paso para la sustentabilidad de nuestras operaciones. Para ello PSI cuenta con un equipo altamente calificado para el análisis de estado inicial, toma de medidas del estado actual, obtención y análisis de toma de datos, detección de oportunidades.
-                        </p>
-                        <p>
-                            Contamos con equipamiento de ultima tecnología para efectuar un análisis minucioso de los consumos energéticos de su empresa.
-                        </p>
-                    </div>
-                    <div class="text wow fadeInRight" id="montaje">
-                        <h4>Montaje y Mantenimiento Industrial</h4>
-                        <p>
-                            Nuestro equipo cuenta con la mas alta experiencia en montaje electromecánico, instalación AC/DC y tensiones débiles.
-                        </p>
-                    </div>
-                </div> 
-                <div class="row servicios">
-                    <div class="text wow fadeInLeft" id="gestion">
-                        <h4>Gestión de proyectos</h4>
-                        <p>
-                            Contamos con un equipo de profesionales multidisciplinario que nos asegura una excelente gestión de nuestros proyectos.
-                        </p>
-                        <p>Las certificaciones obtenidas por nuestro equipo:</p>
-                        <ul>
-                            <li>- Prince 2.</li>
-                            <li>- Six Sigma (Green belt).</li>
-                            <li>- Auditor de calidad.</li>
-                        </ul>
-                    </div>
-                    <div class="text wow fadeInRight" id="habilitaciones">
-                        <h4>Habilitaciones</h4>
-                        <p>
-                            Realizamos todas las habilitaciones correspondientes a:
-                        </p>
-                        <ul>
-                            <li>- Habilitación de calderas</li>
-                            <li>- Instalaciones mecánicas</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
+            <div class="row servicios">
+                <div class="text wow fadeInLeft" id="eficiencia">
+                    <h4>Eficiencia energética</h4>
+                    <p>
+                        La buena gestión de nuestros recursos es el primer paso para la sustentabilidad de nuestras operaciones. Para ello PSI cuenta con un equipo altamente calificado para el análisis de estado inicial, toma de medidas del estado actual, obtención y análisis de toma de datos, detección de oportunidades.
+                    </p>
+                    <p>
+                        Contamos con equipamiento de ultima tecnología para efectuar un análisis minucioso de los consumos energéticos de su empresa.
+                    </p>
+                </div>
+                <div class="text wow fadeInRight" id="montaje">
+                    <h4>Montaje y Mantenimiento Industrial</h4>
+                    <p>
+                        Nuestro equipo cuenta con la mas alta experiencia en montaje electromecánico, instalación AC/DC y tensiones débiles.
+                    </p>
+                </div>
+            </div>
+            <div class="row servicios">
+                <div class="text wow fadeInLeft" id="gestion">
+                    <h4>Gestión de proyectos</h4>
+                    <p>
+                        Contamos con un equipo de profesionales multidisciplinario que nos asegura una excelente gestión de nuestros proyectos.
+                    </p>
+                    <p>Las certificaciones obtenidas por nuestro equipo:</p>
+                    <ul>
+                        <li>- Prince 2.</li>
+                        <li>- Six Sigma (Green belt).</li>
+                        <li>- Auditor de calidad.</li>
+                    </ul>
+                </div>
+                <div class="text wow fadeInRight" id="habilitaciones">
+                    <h4>Habilitaciones</h4>
+                    <p>
+                        Realizamos todas las habilitaciones correspondientes a:
+                    </p>
+                    <ul>
+                        <li>- Habilitación de calderas</li>
+                        <li>- Instalaciones mecánicas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </div>
+
+    <div id="contact-section" class="text-center">
+        <div class="container">
+            <div class="section-title center">
+                <h2><span>C</span>ontactenos</h2>
+                <hr>
+                <p>Nuestro equipo esta disponible para responder sus dudas.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-12 contact-info">
+                    <i class="fa fa-map-marker"></i>
+                    <p>
+                        Montevideo, UY
+                    </p>
+                </div>
+                <div class="col-md-12 contact-info">
+                    <i class="fa fa-envelope-o"></i>
+                    <p>contacto@psi.com.uy</p>
+                </div>
+                <div class="col-md-12 contact-info">
+                    <i class="fa fa-phone"></i>
+                    <p> +598 2628 8438</p>
+                </div>
+                <hr>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-lg-6 col-md-6 wow fadeInUp delay-05s" ng-app="form">
+                <div class="form" ng-controller="homeCtrl as vm">
+                    <form ng-submit="vm.sendEmail(emailData.$valid)" name="emailData" style="padding-top: 10px" novalidate>
+                        <input class="input-text" type="text" name="name" placeholder="Nombre" ng-model="vm.user.nombre">
+
+                        <input class="input-text" type="text" name="email" placeholder="E-mail" ng-model="vm.user.email">
+
+                        <textarea class="input-text text-area" name="message" cols="0" rows="0" validate-email ng-model="vm.user.mensaje" placeholder="Mensaje"></textarea>
+                        <!--<input class="input-text" type="text" name="captchaCode" ng-model="captchaCode" correct-captcha id="captchaCode" autocomplete="off">-->
+                        <button type="submit" class="btn btn-warning">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div id="social-section">
         <div class="container">

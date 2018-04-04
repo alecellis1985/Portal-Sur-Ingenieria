@@ -430,16 +430,14 @@ img.services {
 }
 /* About Section */
 #about-section {
-	padding: 80px 0;
+    padding: 80px 0;
+    background-color: #f6f6f6;
 }
 #about-section p {
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
 /* Team Section */
-#team-section {
-	padding: 60px 0 0 0;
-}
 .section-title.center {
 	padding: 30px 0;
 }
@@ -477,12 +475,37 @@ img.img-circle.team-img {
     margin: 19px;
 }
 
-a.nuestroEquipo {
-    padding: 15px;
-    border: 2px solid #0dad8d;
-    font-weight: 600;
-    font-size: 17px;
+#beneficios-fiscales .nav-tabs > li {
+    width: 50%;
+    margin-bottom: 35px;
 }
+
+    #beneficios-fiscales .nav-tabs > li.active > a, #beneficios-fiscales .nav-tabs > li.active > a:hover, #beneficios-fiscales .nav-tabs > li.active > a:focus {
+        border: none !important;
+        background-color: #f6f6f6;
+    }
+
+#beneficios-fiscales #argentina {
+    padding-top: 77px;
+    height: 700px;
+}
+#beneficios-fiscales #uruguay {
+    height: 700px;
+}
+    #beneficios-fiscales #argentina ul li {
+        list-style: disc;
+        text-align: left;
+        margin: 30px;
+    }
+
+
+
+    a.nuestroEquipo {
+        padding: 15px;
+        border: 2px solid #0dad8d;
+        font-weight: 600;
+        font-size: 17px;
+    }
     a.nuestroEquipo:hover {
         color: #FFFFFF;
         background: #0dad8d;
@@ -650,7 +673,7 @@ section#beneficios-fiscales {
         text-align: left;
     }
 
-    section#beneficios-fiscales div.item a {
+    section#beneficios-fiscales a.more {
         padding: 6px;
         border: 2px solid #0dad8d;
         font-weight: 600;
@@ -660,10 +683,19 @@ section#beneficios-fiscales {
         right: 20px;
     }
 
-section#beneficios-fiscales div.item a:hover {
+section#beneficios-fiscales a.more:hover {
     color: #FFFFFF;
     background: #0dad8d;
 }
+
+    section#beneficios-fiscales #argentina a.more {
+        padding: 6px;
+        border: 2px solid #0dad8d;
+        font-weight: 600;
+        float: right;
+        font-size: 17px;
+        position: unset;
+    }
 
 section#energia-renovable {
 background-color: #f6f6f6;
@@ -717,3 +749,37 @@ background-color: #f6f6f6;
         resize: none;
         overflow: auto;
     }
+section#novedades div.item {
+    background-color: #f6f6f6;
+    height: 390px;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+section#novedades {
+    padding-bottom: 50px;
+}
+
+    section#novedades div.item h3 {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    section#novedades div.item p {
+        text-align: left;
+    }
+
+    section#novedades a.more {
+        padding: 6px;
+        border: 2px solid #0dad8d;
+        font-weight: 600;
+        font-size: 17px;
+        position: absolute;
+        bottom: 54px;
+        right: 20px;
+    }
+
+section#novedades a.more:hover {
+    color: #FFFFFF;
+    background: #0dad8d;
+}

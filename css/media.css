@@ -59,7 +59,12 @@
     .form {
         margin: 0 0 0 20px
     }
-}
+    #beneficios-fiscales #uruguay {
+        height: 900px;
+    }
+    section#energia-renovable h2 {
+        line-height: 1.2;
+    }
 @media (max-width: 992px) {
     #menu.navbar-default .navbar-nav > li > a.active {
         border-bottom: none;    
@@ -95,8 +100,14 @@
         padding-bottom: 35px;
         right: 0;
     }
+
+    section#beneficios-fiscales #uruguay {
+        height: 1120px;
+        margin-top: 50px;
+    }
     section#beneficios-fiscales div.item {
-        height: 185px;
+        height: 214px;
+        margin-bottom: 10px;
     }
         section#beneficios-fiscales div.item a {
             bottom: 10px;
@@ -108,9 +119,7 @@
         height: auto;
         left: 0;
     }
-    section#beneficios-fiscales div.item {
-        height: 285px;
-    }
+
     section#energia-renovable h2 {
     }
     section#energia-renovable div.bfinfo li {
@@ -144,6 +153,16 @@
     }
     .form {
         margin: 0;
+    }
+    section#beneficios-fiscales div.item {
+        height: 250px;
+    }
+    section#beneficios-fiscales #uruguay {
+        margin-top: 50px;
+        height: 1320px;
+    }
+    #beneficios-fiscales #argentina {
+        height: 760px;
     }
 }
 @media (max-width: 480px) {
@@ -191,6 +210,15 @@
         }
     section#energia-renovable h2 {
         line-height: 31px;
+    }
+    section#beneficios-fiscales #uruguay {
+        height: 1560px;
+    }
+    #beneficios-fiscales #argentina ul li {
+        margin: 10px;
+    }
+    #beneficios-fiscales #argentina {
+        height: 860px;
     }
 }
 @media (max-width: 320px) {
