@@ -301,7 +301,7 @@ div#services-section div.servicios {
 }
 
 #services-section div.service-container {
-    height: 1750px;
+    height: 1210px;
 }
 /* Gallery Section 
 ==============================*/
@@ -366,7 +366,7 @@ ol.type li a:hover {
 	transition-property: transform, opacity;
 }
 .portfolio-item .hover-bg {
-	height: 350px;
+	height: 242px;
 	overflow: hidden;
 	position: relative;
 }
@@ -390,7 +390,7 @@ img.services {
     margin: 0 auto;
     color: #ffffff;
     background: rgba(0, 0, 0, 0.66);
-    padding: 100px 0 0 0;
+    padding: 48px 0 0 0;
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -474,7 +474,8 @@ img.img-circle.team-img {
 }
 
 .wholeTeamBtn {
-    padding: 19px;
+    padding: 30px 0 30px 0;
+    width: 100%;
 }
 #beneficios-fiscales .wholeTeamBtn {
     margin: 19px;

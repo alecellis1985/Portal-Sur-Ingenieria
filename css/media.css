@@ -1,14 +1,17 @@
 @media (max-width: 1200px) {
     .navbar-right {
-        margin-right: -0;
+        margin-right: 0;
     }
+
     #menu.navbar-default .navbar-nav > li > a {
         padding: 15px 15px 5px 15px;
     }
+
         #menu.navbar-default .navbar-nav > li > a.active {
             border: none;
             text-decoration: underline;
         }
+
         #menu.navbar-default .navbar-nav > li > a:hover {
             color: #63768e;
             border: none;
@@ -16,10 +19,10 @@
             transition: 0s;
         }
 
-        .intro-text {
-            padding-top: 150px;
-            padding-bottom: 100px;
-        }
+    .intro-text {
+        padding-top: 150px;
+        padding-bottom: 100px;
+    }
 
         .intro-text H1 {
             font-size: 59px;
@@ -59,25 +62,26 @@
         height: 267px;
     }
 
-    .bfimg {
-        width: auto;
-        position: absolute;
-        height: 600px;
-        left: -9px;
-    }
-
     #energia-renovable h2 {
         font-size: 28px;
     }
+
     .form {
         margin: 0 0 0 20px
     }
+
     #beneficios-fiscales #uruguay {
         height: 900px;
     }
+
     section#energia-renovable h2 {
         line-height: 1.2;
     }
+
+    #services-section div#instalacion {
+        height: auto;
+    }
+}
 @media (max-width: 992px) {
     #menu.navbar-default .navbar-nav > li > a.active {
         border-bottom: none;    
@@ -101,10 +105,13 @@
     #services-section div.row {
         margin-bottom: 12px;
     }
-    #services-section div.row div.text {
-        height: auto;
-        padding-top: 11px;
-    }
+        #services-section div.row div.text {
+            height: auto;
+            padding-top: 11px;
+            width: 98%;
+            margin: 10px;
+            float: unset !important;
+        }
     #services-section div.row img.services {
         height: auto;
         width: unset;
