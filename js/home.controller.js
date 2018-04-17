@@ -12,7 +12,7 @@
                 return;
             }
 
-			CommonService.postJsonRequest('api/sendMail', vm.user).then(function (result) {
+			CommonService.postJsonRequest('../api/sendMail', vm.user).then(function (result) {
                 if (result.data.success)
                     $rootScope.$broadcast('alert-event', { type: 'success', msg: 'Has sido registrado con exito' });
                 else

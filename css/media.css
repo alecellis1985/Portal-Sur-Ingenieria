@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {
     .navbar-right {
-        margin-right: 0;
+        margin-right: 50px;
     }
 
     #menu.navbar-default .navbar-nav > li > a {
@@ -100,7 +100,7 @@
         height: 235px;
     }
     #services-section div.service-container {
-        height: 1175px;
+        height: 1275px;
     }
     #services-section div.row {
         margin-bottom: 12px;
@@ -156,7 +156,7 @@
         font-size: 43px;
     }
     #services-section {
-        padding: 10px 0;
+        padding: 10px 0 0 0;
     }
 
         #services-section.services-page {
@@ -184,6 +184,9 @@
     #beneficios-fiscales #argentina {
         height: 760px;
     }
+    .portfolio-item {
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 480px) {
     header#home {
@@ -206,7 +209,7 @@
         padding: 10px 0 0 0;
     }
     #services-section div.service-container {
-        height: 850px;
+        height: 950px;
     }
     #services-section div.row div.text {
         padding-left: 10px;

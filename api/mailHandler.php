@@ -15,11 +15,9 @@ function sendEmail() {
 	        $messageBody .= "<p>Nombre: " . $emailPostData->nombre . "</p>" . "\n";
 	        $messageBody .= "<p>Mensaje: " . $emailPostData->mensaje . "</p>" . "\n";
             $messageBody .= "<br>" . "\n";
-	        $messageBody = strip_tags($messag	eBody);
-			$captcha = new SimpleCaptcha();
-			$isHuman = $captcha->Validate($captchaCode, $captchaId);
+	        $messageBody = strip_tags($messageBody);
 			try {
-				if ( mail('mathiascasapouso@gmail.com',$subject,$messageBody,$headers)) {
+				if ( mail('mathiascasa@yahoo.com',$subject,$messageBody,$headers)) {
 					$response = MessageHandler::getSuccessResponse("The email has been sent!", null);
 				} else {
 

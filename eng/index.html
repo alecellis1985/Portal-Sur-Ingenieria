@@ -32,7 +32,10 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 </head>
-<body>
+<body ng-app="form">
+    <div class="alertsTop hideAll"  ng-controller="alertCtrl as vm">
+        <alert ng-repeat="alert in vm.alerts" type="{{alert.type}}" close="vm.closeAlert($index)">{{alert.msg}}</alert>
+    </div>
     <div id="lang" class="hidden-xs">
         <a href="../esp/index.html">
             <img src="../img/esp.PNG" alt="Español" />
@@ -149,7 +152,7 @@
                 </div>
                 <div class="portfolio-item wow fadeInLeft">
                     <div class="hover-bg">
-                        <a href="services.html#habilitaciones" title="Panel Solar Venta">
+                        <a href="" title="Panel Solar Venta">
                             <div class="hover-text">
                                 <h4>Permits</h4>
                                 <p>Read More <i class="fa fa-caret-right"></i></p>
@@ -162,6 +165,38 @@
             </div>
         </div>
     </div>
+    <div id="about-section">
+        <div class="container">
+            <div class="section-title text-center center">
+                <h2><span>O</span>UR <span>C</span>USTOMERS</h2>
+                <hr>
+                <div class="clearfix"></div>
+                <a href="http://www.bertoni.com.uy/" title="Cliente Logo" target="_blank">
+                    <img class="partners" src="../img/clientes/bertoni.PNG" alt="Our Clients" />
+                </a>
+                <a href="http://www.delibest.com/" title="Cliente Logo" target="_blank">
+                    <img class="partners" src="../img/clientes/delibest.png" alt="Our Clients" />
+                </a>
+                <a href="http://www.fnc.com.uy/" title="Cliente Logo" target="_blank">
+                    <img class="partners" src="../img/clientes/fnc.png" alt="Our Clients" />
+                </a>
+                <a href="https://www.melinor.com.uy/cms/" title="Cliente Logo" target="_blank">
+                    <img class="partners" src="../img/clientes/melinor.png" alt="Our Clients" />
+                </a>
+                <br class="hidden-xs hidden-sm hidden-md" />
+                <a href="http://mtaingenieria.com" title="Cliente Logo" target="_blank">
+                    <img class="partners" src="../img/clientes/mtaingenieria.png" alt="Our Clients" />
+                </a>
+                <a href="http://www.skf.com/uy/index.html?switch=y" title="Cliente Logo" target="_blank">
+                    <img class="partners" src="../img/clientes/skf.png" alt="Our Clients" />
+                </a>
+                <a href="https://ventusenergia.com/" title="Cliente Logo" target="_blank">
+                    <img class="partners" src="../img/clientes/ventus.png" alt="Our Clients" />
+                </a>
+            </div>
+        </div>
+    </div>
+
     <section id="news">
         <div class="container">
             <div class="section-title text-center center">
@@ -169,9 +204,9 @@
                 <hr>
                 <div class="clearfix"></div>
                 <div class="col-md-12">
-                    <a class="twitter-timeline" title="twitter bitconnect" data-width="80%" data-height="800" href="https://twitter.com/jack?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Tweets by PSI</a>
+                    <a class="twitter-timeline" title="twitter PSI" data-width="80%" data-height="800" href="https://twitter.com/PSILATAM">Tweets by PSI</a>
                     <br>
-                    <a title="twitter bitconnect" href="https://twitter.com/jack?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" data-size="large" class="twitter-mention-button" data-show-count="false">Tweet to @PSI</a>
+                    <a title="twitter PSI" href="https://twitter.com/PSILATAM" data-size="large" class="twitter-mention-button" data-show-count="false">Tweet to @PSI</a>
                 </div>
             </div>
         </div>
@@ -191,9 +226,9 @@
                 </p>
                 <p>We have different types of contracts for operation and maintenance of photovoltaic parks tailored to each of our customers/p>
             </div>
-            <div class="text-center row wholeTeamBtn">
+            <!--<div class="text-center row wholeTeamBtn">
                 <a href="aboutus.html" class="nuestroEquipo">Take a look at our amazing team &nbsp;<i class="fa fa-caret-right"></i></a>
-            </div>
+            </div>-->
         </div>
     </div>
     <!-- Achievements Section -->
@@ -221,7 +256,7 @@
                     </div>
                     <div class="col-md-3 col-sm-3">
                         <div class="achievement-box">
-                            <span class="count">14</span>
+                            <span class="count">14,400</span>
                             <h4>KWs Produced</h4>
                         </div>
                     </div>
@@ -297,10 +332,10 @@
         <div class="container">
             <div class="social">
                 <ul>
-                    <li><a href="#" title="Social Media"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" title="Social Media"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#" title="Social Media"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#" title="Social Media"><i class="fa fa-linkedin"></i></a></li>
+                    <!--<li><a href="#" title="Social Media"><i class="fa fa-facebook"></i></a></li>-->
+                    <li><a href="https://twitter.com/PSILATAM" title="Social Media"><i class="fa fa-twitter"></i></a></li>
+                    <!--<li><a href="#" title="Social Media"><i class="fa fa-instagram"></i></a></li>-->
+                    <!--<li><a href="#" title="Social Media"><i class="fa fa-linkedin"></i></a></li>-->
                 </ul>
             </div>
         </div>
@@ -331,11 +366,12 @@
     <script type="text/javascript" src="../js/CommonService.js"></script>
     <script type="text/javascript" src="../js/form.app.js"></script>
     <script type="text/javascript" src="../js/home.controller.js"></script>>
+
     <script type="text/javascript" src="../js/alert.controller.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
     <!-- Javascripts
-        ================================================== -->
+    ================================================== -->
     <script type="text/javascript" src="../js/main.js"></script>
     <script>
         function initMap() {
@@ -344,10 +380,10 @@
                 zoom: 16,
                 center: uluru
             });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
+            //var marker = new google.maps.Marker({
+            //    position: uluru,
+            //    map: map
+            //});
         }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAakIwJebqHNEbDY5Mt2ZEs-P7XR2vKJdo&callback=initMap"></script>

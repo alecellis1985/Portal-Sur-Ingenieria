@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    angular.module('shared').controller('alertCtrl', alertCtrl);
+    angular.module('form').controller('alertCtrl', alertCtrl);
 
     alertCtrl.$inject = ['$scope', '$timeout'];
 
@@ -8,7 +8,8 @@
         var vm = this;
         //Alert OBJS { type: 'danger', msg: 'Oh snap! Change a few things up and try submitting again.' }
         vm.alerts = [];
-        vm.closeAlert = closeAlert;
+		vm.closeAlert = closeAlert;
+		vm.alert = {msg: ''};
 
         $scope.$on('alert-event', function (event, args) {
             $scope.addAlert(args);
@@ -18,14 +19,16 @@
             }, 5);
         });
 
-        $scope.addAlert = function (alertElem) {
-            if (alertElem.type === 'danger') {
+		$scope.addAlert = function (alertElem) {
+			if (alertElem.type === 'danger') {
                 vm.alerts.forEach(function (alert, index) {
-                    if (alert.type === 'danger')
+					if (alert.type === 'danger')
+						
                         vm.closeAlert(index);
                 });
             }
-            vm.alerts.push(alertElem);
+			vm.alerts.push(alertElem);
+			debugger;
             var alertIndex = vm.alerts.length - 1;
             $timeout(function () {
                 //NEED TO ADD THIS BECAUSE angular 1.3 adds to the element an ng hide
@@ -37,4 +40,4 @@
             vm.alerts.splice(index, 1);
         }
     }
-});
+})();
