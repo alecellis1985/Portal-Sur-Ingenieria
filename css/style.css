@@ -576,7 +576,7 @@ label {
     width:100%;
 }
 
-#contact-section .form-control {
+.form-control {
     display: block;
     width: 100%;
     padding: 6px 12px;
@@ -816,3 +816,10 @@ section#novedades a.more:hover {
         height: 35px;
         margin: 5px;
     }
+
+.alertsTop {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+    z-index: 2132132;
+}

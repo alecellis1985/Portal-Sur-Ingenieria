@@ -22,18 +22,17 @@
 		$scope.addAlert = function (alertElem) {
 			if (alertElem.type === 'danger') {
                 vm.alerts.forEach(function (alert, index) {
-					if (alert.type === 'danger')
-						
-                        vm.closeAlert(index);
+					if (alert.type === 'danger') {
+					    vm.closeAlert(index);
+					}
                 });
             }
 			vm.alerts.push(alertElem);
-			debugger;
             var alertIndex = vm.alerts.length - 1;
             $timeout(function () {
                 //NEED TO ADD THIS BECAUSE angular 1.3 adds to the element an ng hide
                 vm.closeAlert(alertIndex);
-            }, 5000);
+            }, 10000);
         };
 
         function closeAlert(index) {
