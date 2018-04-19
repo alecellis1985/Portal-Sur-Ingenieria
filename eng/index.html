@@ -21,9 +21,9 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/media.css">
     <link rel="stylesheet" type="text/css" href="../css/prettyPhoto.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="../js/modernizr.custom.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="../js/libs/modernizr.custom.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,14 +33,27 @@
         <![endif]-->
 </head>
 <body ng-app="form">
-    <div class="alertsTop hideAll"  ng-controller="alertCtrl as vm">
-        <alert ng-repeat="alert in vm.alerts" type="{{alert.type}}" close="vm.closeAlert($index)">{{alert.msg}}</alert>
+    <div class="alertsTop hideAll" ng-controller="alertCtrl as vm">
+        <div class="alert alert-{{alert.type}}" ng-repeat="alert in vm.alerts">
+            {{alert.msg}}
+            <button type="button" class="close" ng-click="vm.closeAlert($index)" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
     </div>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
     <div id="lang" class="hidden-xs">
         <a href="../index.html">
             <img src="../img/esp.PNG" alt="Español" />
         </a>
-        <a href="../eng/index.html">
+        <a href="index.html">
             <img src="../img/eng.png" alt="English" />
         </a>
     </div>
@@ -68,11 +81,11 @@
                     <li><a href="#contact-section" class="page-scroll" title="Contact">Contact</a></li>
                     <li>
                         <div id="langMobile" class="hidden-sm hidden-md hidden-lg">
-                            <a href="../esp/index.html">
-                                <img src="../img/esp.PNG" alt="Español" />
+                            <a href="../index.html">
+                                <img src="img/esp.PNG" alt="Español" />
                             </a>
-                            <a href="../eng/index.html">
-                                <img src="../img/eng.png" alt="Español" />
+                            <a href="index.html">
+                                <img src="../img/eng.png" alt="English" />
                             </a>
                         </div>
                     </li>
@@ -308,14 +321,25 @@
                 <hr>
                 <div class="clearfix"></div>
             </div>
-            <div class="col-lg-6 col-md-6 wow fadeInUp delay-05s" ng-app="form">
+            <div class="col-lg-6 col-md-6 wow fadeInUp delay-05s">
                 <div class="form" ng-controller="homeCtrl as vm">
                     <form ng-submit="vm.sendEmail(emailData.$valid)" name="emailData" style="padding-top: 10px" novalidate>
-                        <input class="input-text" type="text" name="name" placeholder="Name" ng-model="vm.user.nombre">
+                        <div class="form-group" ng-class="{ 'has-error' : emailData.name.$invalid && !emailData.name.$pristine }">
+                            <label><b>Name</b></label>
+                            <input type="text" name="name" placeholder="Name" class="input-text form-control" ng-model="vm.user.nombre" required>
+                            <p ng-show="emailData.name.$invalid && !emailData.name.$pristine" class="help-block">Name is required.</p>
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error' : emailData.email.$invalid && !emailData.email.$pristine }">
+                            <label><b>Email</b></label>
+                            <input type="email" name="email" placeholder="Email" class="form-control input-text" ng-model="vm.user.email" required>
+                            <p ng-show="emailData.email.$invalid && !emailData.email.$pristine" class="help-block">Email is not valid.</p>
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error' : emailData.email.$invalid && !emailData.email.$pristine }">
+                            <label><b>Message</b></label>
+                            <textarea class="input-text text-area form-control" name="message" cols="0" rows="0" ng-model="vm.user.mensaje" required ng-minlength="10" ng-maxlength="500" placeholder="Message"></textarea>
+                            <p ng-show="emailData.message.$invalid && !emailData.message.$pristine" class="help-block">The message needs to have between 10 and 500 characters.</p>
+                        </div>
 
-                        <input class="input-text" type="text" name="email" placeholder="E-mail" ng-model="vm.user.email">
-
-                        <textarea class="input-text text-area" name="message" cols="0" rows="0" validate-email ng-model="vm.user.mensaje" placeholder="Message"></textarea>
                         <!--<input class="input-text" type="text" name="captchaCode" ng-model="captchaCode" correct-captcha id="captchaCode" autocomplete="off">-->
                         <button type="submit" class="btn btn-warning">Send</button>
                     </form>
@@ -349,24 +373,22 @@
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery.1.11.1.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="../js/bootstrap.js"></script>
-    <script type="text/javascript" src="../js/SmoothScroll.js"></script>
-    <script type="text/javascript" src="../js/jquery.counterup.js"></script>
-    <script type="text/javascript" src="../js/waypoints.js"></script>
-    <script type="text/javascript" src="../js/jquery.prettyPhoto.js"></script>
-    <script type="text/javascript" src="../js/jquery.isotope.js"></script>
-    <script type="text/javascript" src="../js/jqBootstrapValidation.js"></script>
-    <script type="text/javascript" src="../js/wow.js"></script>
-    <script type="text/javascript" src="../js/angular.min.js"></script>
-    <script type="text/javascript" src="../js/angular-ui-router.min.js"></script>
-    <script type="text/javascript" src="../js/angularjs-captcha.js"></script>
+    <script type="text/javascript" src="../js/libs/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/libs/SmoothScroll.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery.counterup.js"></script>
+    <script type="text/javascript" src="../js/libs/waypoints.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="../js/libs/jquery.isotope.js"></script>
+    <script type="text/javascript" src="../js/libs/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="../js/libs/wow.js"></script>
+    <script type="text/javascript" src="../js/libs/angular.min.js"></script>
+    <script type="text/javascript" src="../js/libs/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="../js/libs/angularjs-captcha.js"></script>
     <script type="text/javascript" src="../js/CommonService.js"></script>
     <script type="text/javascript" src="../js/form.app.js"></script>
     <script type="text/javascript" src="../js/home.controller.js"></script>>
-
     <script type="text/javascript" src="../js/alert.controller.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
