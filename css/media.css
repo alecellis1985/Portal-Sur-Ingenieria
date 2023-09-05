@@ -93,7 +93,7 @@
     .intro-text H2 {
         font-size: 25px;
     }
-    .achievement-box span.count {
+    .achievement-box span.count, .achievement-box span.countlbl {
         font-size: 35px;
     }
     .portfolio-item .hover-bg {

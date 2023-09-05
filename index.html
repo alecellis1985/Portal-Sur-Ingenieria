@@ -18,32 +18,32 @@
 
     <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=1.0.0">
+    <link rel="stylesheet" type="text/css" href="css/media.css?v=1.0.0">
     <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/libs/modernizr.custom.js"></script>
 
 </head>
 <body ng-app="form">
-<div class="alertsTop hideAll" ng-controller="alertCtrl as vm">
-    <div class="alert alert-{{alert.type}}" ng-repeat="alert in vm.alerts">
-        {{alert.msg}}
-        <button type="button" class="close" ng-click="vm.closeAlert($index)" aria-label="Close">
+    <div class="alertsTop hideAll" ng-controller="alertCtrl as vm">
+        <div class="alert alert-{{alert.type}}" ng-repeat="alert in vm.alerts">
+            {{alert.msg}}
+            <button type="button" class="close" ng-click="vm.closeAlert($index)" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
-</div>
 
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div>
-
-<div id="lang" class="hidden-xs">
+    <div id="lang" class="hidden-xs">
         <a href="index.html">
             <img src="img/esp.PNG" alt="Español" />
         </a>
@@ -66,10 +66,9 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html" class="page-scroll  active" title="Inicio">Inicio</a></li>
                     <li><a href="#services-section" class="page-scroll" title="Servicios">Servicios</a></li>
-                    <li><a href="#novedades" class="page-scroll" title="Novedades">Novedades</a></li>
                     <br class="hidden-xs hidden-lg" />
                     <br class="hidden-xs hidden-lg" />
-                    <li><a href="#about-section" class="page-scroll" title="Sobre Nosostros">Sobre Nosostros</a></li>
+                    <li><a href="#sobre-nosotros" class="page-scroll" title="Sobre Nosostros">Sobre Nosostros</a></li>
                     <li><a href="#beneficios-fiscales" class="page-scroll" title="Beneficios Fiscales">Beneficios Fiscales</a></li>
                     <li><a href="#contact-section" class="page-scroll" title="Contacto">Contacto</a></li>
                     <li>
@@ -94,82 +93,116 @@
         <div class="intro-text">
             <h1>TRABAJANDO PARA BRINDARLE <br /> UN FUTURO MÁS SUSTENTABLE</h1>
             <h2>Confíe en nosotros para lograr su independencia energética!</h2>
-            <a href="#services-section" class="btn btn-default btn-lg page-scroll" title="Aprender más">APRENDER MÁS <i class="fa fa-caret-down"></i></a>
+            <a href="#achievements" class="btn btn-default btn-lg page-scroll" title="Aprender más">APRENDER MÁS <i class="fa fa-caret-down"></i></a>
         </div>
     </header>
-
-    <!-- Services Section -->
-    <div id="services-section" class="text-center">
-        <div class="section-title center">
-            <h2><span>S</span>ervicios</h2>
-            <hr>
-            <div class="clearfix"></div>
-        </div>
-        <div class="service-container">
-            <div class="web">
-                <div class="portfolio-item wow fadeInLeft">
-                    <div class="hover-bg">
-                        <a href="servicios.html#instalacion" title="Panel Solar">
-                            <div class="hover-text">
-                                <h4>Generación fotovoltaica</h4>
-                                <p>Leer más <i class="fa fa-caret-right"></i></p>
-                                <div class="clearfix"></div>
-                            </div>
-                            <img src="img/portfolio/01.jpg" class="img-responsive home" alt="Panel Solar">
-                        </a>
+    <!-- Achievements Section -->
+    <div id="team-section" class="text-center">
+        <div id="achievements" class="section dark-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <div class="achievement-box">
+                            <span class="countlbl">+</span><span class="count">70</span>
+                            <h4>Plantas solares</h4>
+                        </div>
                     </div>
-                </div>
-                <div class="portfolio-item wow fadeInLeft">
-                    <div class="hover-bg">
-                        <a href="servicios.html#instalacion" title="Panel Solar">
-                            <div class="hover-text">
-                                <h4>Eficiencia energética</h4>
-                                <p>Leer más <i class="fa fa-caret-right"></i></p>
-                                <div class="clearfix"></div>
-                            </div>
-                            <img src="img/portfolio/04.jpg" class="img-responsive home" alt="Panel Solar">
-                        </a>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="achievement-box">
+                            <span class="countlbl">+</span><span class="count">7,300</span>
+                            <h4>KWP Instalados</h4>
+                        </div>
                     </div>
-                </div>
-                <div class="portfolio-item wow fadeInLeft">
-                    <div class="hover-bg">
-                        <a href="servicios.html#mantenimiento" title="Panel Solar Service">
-                            <div class="hover-text">
-                                <h4>Montaje y Mantenimiento Industrial</h4>
-                                <p>Leer más <i class="fa fa-caret-right"></i></p>
-                                <div class="clearfix"></div>
-                            </div>
-                            <img src="img/portfolio/02.jpg" class="img-responsive home" alt="Panel Solar Service">
-                        </a>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="achievement-box">
+                            <span class="countlbl">+</span><span class="count">8</span>
+                            <h4>
+                                AÑOS DE EXPERIENCIA
+                            </h4>
+                        </div>
                     </div>
-                </div>
-                <div class="portfolio-item wow fadeInLeft">
-                    <div class="hover-bg">
-                        <a href="servicios.html#gestion" title="Panel Solar Venta">
-                            <div class="hover-text">
-                                <h4>Gestión de proyectos</h4>
-                                <p>Leer más <i class="fa fa-caret-right"></i></p>
-                                <div class="clearfix"></div>
-                            </div>
-                            <img src="img/portfolio/03.jpg" class="img-responsive home" alt="Panel Solar Venta">
-                        </a>
-                    </div>
-                </div>
-                <div class="portfolio-item wow fadeInLeft">
-                    <div class="hover-bg">
-                        <a href="servicios.html#habilitaciones" title="Panel Solar Venta">
-                            <div class="hover-text">
-                                <h4>Habilitaciones</h4>
-                                <p>Leer más <i class="fa fa-caret-right"></i></p>
-                                <div class="clearfix"></div>
-                            </div>
-                            <img src="img/portfolio/05.jpg" class="img-responsive home" alt="Panel Solar Venta">
-                        </a>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="achievement-box">
+                            <span class="countlbl">#1</span>
+                            <h4>
+                                EN SERVICIO & RESPUESTA
+                            </h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="services-section">
+        <div class="container">
+            <div class="section-title text-center center">
+                <h2>
+                    <span>A</span>REAS DE
+                    <span>N</span>EGOCIO
+                    <span>E</span>NERGÍA
+                </h2>
+                <hr>
+                <div class="clearfix"></div>
+                <p>Realizamos proyectos llave en mano a medida y necesidades de nuestros clientes, tanto en solar fotovoltaico como en storage.</p>
+                <p>Contamos con un equipo multidisciplinario, con mas de 75 proyectos de generación solar fotovoltaica tanto en baja tensión como en media tensión.</p>
+                <p>PSI desarrollo e instalo uno el principal proyecto de STORAGE a nivel industraial del Uruguay, con 250 KW de potencia y 960 KWh de energía.</p>
+            </div>
+        </div>
+    </div>
+    <div class="even">
+        <div class="container">
+            <div class="section-title text-center center">
+                <h2>
+                    <span>A</span>REAS DE
+                    <span>N</span>EGOCIO
+                    <span>S</span>ERVICIOS
+                </h2>
+                <hr>
+                <div class="clearfix"></div>
+                <h3>Operación & Mantenimiento de plantas solares fotovoltaicas</h3>
+                <p>Realizamos O&M de plantas solares para nuestros clientes y de terceros.</p>
+
+                <h3>Auditoria de plantas solares</h3>
+                <p>
+                    Realizamos análisis de estado actual de planta solar para identificar oportunidades de mejora.
+                </p>
+
+                <h3>
+                    Análisis de calidad de energía & Termografías
+                </h3>
+                <p>
+                    Contamos con los equipos necesarios para poder realizar estudios de calidad de energía y termografías de tableros eléctricos.
+                </p>
+
+                <h3>
+                    Eficiencia Energética
+                </h3>
+                <p>
+                    Realizamos estudios de eficiencia energética para nuestros clientes.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="section-title text-center center">
+                <h2>
+                    <span>A</span>REAS DE
+                    <span>N</span>EGOCIO
+                    <br /><br />
+                    <span>M</span>ONTAJE
+                    <span>M</span>ECANICO
+                </h2>
+                <hr>
+                <div class="clearfix"></div>
+                <p>
+                    Realizamos proyectos de montaje de estrucuras metálicas, propias o de terceros, para el sector industrial comercial, teniendo mas de 16.000 m2 construidos.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
     <div id="about-section">
         <div class="container">
             <div class="section-title text-center center">
@@ -202,76 +235,26 @@
         </div>
     </div>
 
-
-    <section id="novedades">
-        <div class="container">
-            <div class="section-title text-center center">
-                <h2><span>N</span>ovedades</h2>
-                <hr>
-                <div class="clearfix"></div>
-                <div class="col-md-12">
-                    <a class="twitter-timeline" title="twitter PSI" data-width="80%" data-height="800" href="https://twitter.com/PSILATAM">Tweets by PSI</a>
-                    <br>
-                    <a title="twitter PSI" href="https://twitter.com/PSILATAM" data-size="large" class="twitter-mention-button" data-show-count="false">Tweet to @PSI</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section -->
-    <div id="about-section">
+    <div id="sobre-nosotros">
         <div class="container">
             <div class="section-title text-center center">
                 <h2><span>S</span>obre <span>N</span>osotros</h2>
                 <hr>
                 <div class="clearfix"></div>
-                <p>PSI es una empresa con amplia experiencia en el sector industrial. Ofrecemos productos y servicios de alta calidad enfocado en las necesidades del cliente, brindando soluciones eficientes que permiten mejorar la competitividad de la empresa.</p>
+                <p>Somos una empresa líder con mas de 8 años de experiencia en proyectos llave en mano en el sector energético, solar fotovoltaico y baterías. Contamos con mas de 70 proyectos en el sector Industrial, Comercial & Residencial.</p>
                 <p>
-                    Tenemos un compromiso directo con el cliente, para entregar un producto/servicio a medida de las necesidades y posibilidades del mismo.<br />
-                    Nuestra área de cobertura es todo el territorio Uruguayo y Argentino. En todos nuestros proyectos  operamos con las marcas top5 a nivel mundial en Paneles, inversores, estructuras, cables y conectores.
+                    Nuestro objetivo es brindar un excelente producto, adecuado a las necesidades de nuestros clientes, utilizando suministros de primera calidad, aplicando las mejores practicas para la instalación.
                 </p>
-                <p>Contamos con distintos tipos de contratos de operación y mantenimiento de los parques fotovoltaicos a medida de cada uno de nuestros clientes</p>
             </div>
             <!--<div class="text-center row wholeTeamBtn">
                 <a href="sobre-nosotros.html" class="nuestroEquipo">Vea nuestro equipo completo &nbsp;<i class="fa fa-caret-right"></i></a>
             </div>-->
         </div>
     </div>
-    <!-- Achievements Section -->
-    <div id="team-section" class="text-center">
-        <div id="achievements" class="section dark-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3">
-                        <div class="achievement-box">
-                            <span class="count">210</span>
-                            <h4>Mts2 Instalados</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3">
-                        <div class="achievement-box">
-                            <span class="count">9,500</span>
-                            <h4>Horas trabajadas</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3">
-                        <div class="achievement-box">
-                            <span class="count">1,123,590</span>
-                            <h4>CO2 Ahorrados</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-3">
-                        <div class="achievement-box">
-                            <span class="count">14,400</span>
-                            <h4>KWs Producidos</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!--Beneficios Fiscales-->
-    <div id="beneficios-fiscales">
+    <div id="beneficios-fiscales" class="even">
         <div class="container">
             <div class="section-title text-center center">
                 <h2><span>B</span>eneficios <span>F</span>iscales</h2>
@@ -292,7 +275,7 @@
     <div id="contact-section" class="text-center">
         <div class="container">
             <div class="section-title center">
-                <h2><span>C</span>ontactenos</h2>
+                <h2><span>C</span>ontáctenos</h2>
                 <hr>
                 <p>Nuestro equipo está disponible para responder sus dudas.</p>
             </div>
@@ -300,7 +283,7 @@
                 <div class="col-md-12 contact-info">
                     <i class="fa fa-map-marker"></i>
                     <p>
-                        Montevideo, UY
+                        Cno Carrasco 5902, Montevideo, UY
                     </p>
                 </div>
                 <div class="col-md-12 contact-info">
@@ -342,7 +325,6 @@
     </div>
     <div class="map">
         <div id="map">
-
         </div>
     </div>
     <div id="social-section">
@@ -381,27 +363,26 @@
     <script type="text/javascript" src="js/libs/angularjs-captcha.js"></script>
     <script type="text/javascript" src="js/CommonService.js"></script>
     <script type="text/javascript" src="js/form.app.js"></script>
-    <script type="text/javascript" src="js/home.controller.js"></script>>
+    <script type="text/javascript" src="js/home.controller.js"></script>
     <script type="text/javascript" src="js/alert.controller.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    <!-- Javascripts
-    ================================================== -->
     <script type="text/javascript" src="js/main.js"></script>
     <script>
         function initMap() {
-            var uluru = { lat: -34.897701, lng: -56.164797 };
+            var uluru = { lat: -34.8716273, lng: -56.089067 };
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 16,
+                zoom: 14,
                 center: uluru
             });
-            //var marker = new google.maps.Marker({
-            //    position: uluru,
-            //    map: map
-            //});
+
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
         }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAakIwJebqHNEbDY5Mt2ZEs-P7XR2vKJdo&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6uEj3apjaAxAnzv9GBVzR7EJLoBTnEPI&callback=initMap"></script>
 
 </body>
 </html>
