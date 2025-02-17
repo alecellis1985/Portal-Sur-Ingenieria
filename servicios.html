@@ -184,7 +184,7 @@
             </div>
             <div class="col-lg-6 col-md-6 wow fadeInUp delay-05s" ng-app="form">
                 <div class="form" ng-controller="homeCtrl as vm">
-                    <form ng-submit="vm.sendEmail(emailData.$valid)" name="emailData" style="padding-top: 10px" novalidate>
+                    <form ng-submit="vm.sendEmail(emailData.$valid,emailData)" name="emailData" style="padding-top: 10px" novalidate>
                         <input class="input-text" type="text" name="name" placeholder="Nombre" ng-model="vm.user.nombre">
 
                         <input class="input-text" type="text" name="email" placeholder="E-mail" ng-model="vm.user.email">
